@@ -1,0 +1,74 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+button.link {
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;    
+  }
+
+  button.link:focus,
+  button.link:hover {
+    color: #fff;
+  }
+  
+  button.link:focus:after,
+  button.link:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  div.align-items-center.row{
+    padding-top: 20px;
+  }
+
+  button.link:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ff0000; /* to edit later */
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  div.container-fluid{
+    background-color: black;
+    color: white;
+    height: 100px;
+  }
+
+  button.link>a{
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Adjust navbar icon color for small screens */
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    color: white; /* Set to the desired color */
+    /* height: auto; */
+  }
+}
