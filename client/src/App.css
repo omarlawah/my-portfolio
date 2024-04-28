@@ -36,6 +36,11 @@
   }
   
 
+  img{
+    width: 24px;
+    height: 100%;
+  }
+
 /* Media query for screens larger than 768 pixels */
 @media screen and (min-width: 768px) {
     a::after{
