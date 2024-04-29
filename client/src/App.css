@@ -37,8 +37,8 @@
   
 
   img{
-    width: 24px;
-    height: 100%;
+    width: 40px;
+    height: auto;
   }
 
 /* Media query for screens larger than 768 pixels */
@@ -66,3 +66,54 @@
     pointer-events: none;
     color: rgb(255, 255, 255);
   }
+
+
+/* Home components styling */
+
+.home-container {
+  background-image: url('./assets/backGround.jpg');
+  background-size: contain;
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;   
+}
+
+.home-content {
+  z-index: 2;
+  padding: 10%;
+  
+}
+
+#intro{
+  padding-left: 10%;
+  color: white;
+  
+}
+
+#intro>div>p {
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 20px;
+  margin-right: 10%;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  cursor: default;
+  transition: 1s;
+  border: 2px solid;
+  border-top-color: purple ;
+  border-left-color: purple ;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+#intro>div>p:hover{
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: purple;
+  border-right-color: purple;
+  transition: 1s;
+}
+
+#intro>div > p> span{
+  font-size: 2.5rem;
+  font-weight: 600;
+} 

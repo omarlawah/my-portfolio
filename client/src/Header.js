@@ -1,14 +1,14 @@
 import React from 'react';
 import {  NavLink } from 'react-router-dom';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav, Image } from 'react-bootstrap';
 import logo from './assets/logo.png';
 
 
 const Header = () => {
   return (
     <Navbar expand="sm"  bg='black'>
-      <Container>'
-        <Navbar.Brand><img src={logo} alt='logo' /></Navbar.Brand>   
+      <Container>
+        <Navbar.Brand><Image src={logo} alt='logo'/></Navbar.Brand>   
         <Navbar.Brand>Omar Lawah</Navbar.Brand>
         <Navbar.Toggle  aria-controls="basic-navbar-nav" />
         <Navbar.Collapse  id="basic-navbar-nav">
