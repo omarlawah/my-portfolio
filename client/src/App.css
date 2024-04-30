@@ -114,17 +114,14 @@
   cursor: default;
   transition: 1s;
   border: 2px solid;
-  border-top-color: purple ;
-  border-left-color: purple ;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
+  border-left-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  border-right: transparent;
+  border-bottom: transparent;
 }
 
 #intro>div>p:hover{
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: purple;
-  border-right-color: purple;
+  box-shadow: 5px 7px 40px rgb(255, 255, 255);
   transition: 1s;
 }
 
