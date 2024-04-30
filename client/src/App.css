@@ -1,5 +1,4 @@
 
-
 /* header styling */ 
   a{
     color: #fff !important;
@@ -68,30 +67,46 @@
   }
 
 
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #292828; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 6px; 
+}
+
+
 /* Home components styling */
 
+
+
 .home-container {
-  background-image: url('./assets/backGround.jpg');
-  background-size: contain;
-  height: 1000px;
-  width: 100%;
-  background-repeat: no-repeat;   
+  margin-bottom: 10px;
+  z-index: 2;
+  /* height: 100vh; */
+  background-image: url('./assets/background2.jpg');
 }
 
 .home-content {
-  z-index: 2;
+  text-align:center;
   padding: 10%;
-  
 }
 
 #intro{
   padding-left: 10%;
   color: white;
-  
+
 }
 
 #intro>div>p {
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: transparent;
+  backdrop-filter: blur(15px);
   padding: 20px;
   margin-right: 10%;
   font-size: 1.5rem;
