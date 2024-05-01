@@ -1,9 +1,8 @@
 
 import React from 'react';
-import {  NavLink } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { Container, Navbar, Nav, Image } from 'react-bootstrap';
 import logo from './assets/logo.png';
-
 
 const Header = () => {
   
@@ -15,9 +14,9 @@ const Header = () => {
         <Navbar.Toggle  aria-controls="basic-navbar-nav" />
         <Navbar.Collapse  id="basic-navbar-nav">
           <Nav  className="ms-auto">
-            <Nav.Link ><NavLink to={'/'}>Home</NavLink></Nav.Link>
-            <Nav.Link ><NavLink  to={'/Services'}>Services</NavLink></Nav.Link>
-            <Nav.Link ><NavLink to={'/Projects'}>Projects</NavLink></Nav.Link>
+            <Nav.Link ><Link  to={'/'}>Home</Link></Nav.Link>
+            <Nav.Link ><Link  to={'/Services'}>Services</Link></Nav.Link>
+            <Nav.Link ><Link  to={'/Projects'}>Projects</Link></Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown"> */}
               {/* <NavDropdown.Divider/> */}
               {/* <NavDropdown.Item href="#action/3.4"> */}

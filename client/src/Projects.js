@@ -10,7 +10,7 @@ const Projects = () => {
      };
     return ( 
         <>
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel  activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 {/* Placeholder content for the first slide */}
                 <img
