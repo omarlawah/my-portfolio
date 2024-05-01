@@ -86,10 +86,12 @@
 
 
 .home-container {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   z-index: 2;
   /* height: 100vh; */
   background-image: url('./assets/background2.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .home-content {
@@ -207,16 +209,7 @@ button:hover .button-text {
   border-radius: 25px;
   cursor: default;
   transition: 1s;
-  border: 2px solid;
-  border-left-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  border-right: transparent;
-  border-bottom: transparent;
-}
-
-#intro>div>p:hover{
-  box-shadow: 5px 7px 15px rgb(255, 255, 255);
-  transition: 1s;
+  border: 1px solid white;
 }
 
 #intro>div > p> span{
@@ -226,8 +219,6 @@ button:hover .button-text {
 
 div.home-container>.home-content>#intro> div.col> p>span{
   font-family: monospace;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 
@@ -235,6 +226,7 @@ div.home-container>.home-content>#intro> div.col> p>span{
 
 .fancy {
   background-color: transparent;
+  backdrop-filter: blur(10px);
   border: 2px solid #000;
   border-radius: 0;
   box-sizing: border-box;
