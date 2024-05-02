@@ -7,7 +7,7 @@ import logo from './assets/logo.png';
 const Header = () => {
   
   return (
-    <Navbar expand="sm"  bg='black'>
+    <Navbar className='header' expand="sm"  bg='black'>
       <Container>
         <Navbar.Brand><Image src={logo} alt='logo'/></Navbar.Brand>   
         <Navbar.Brand>Omar Lawah</Navbar.Brand>

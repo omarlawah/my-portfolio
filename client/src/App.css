@@ -1,11 +1,19 @@
 
 /* header styling */ 
-  a{
+  .header{
+    position: fixed !important;
+    /* top: 0; */
+    width: 100%;
+    z-index: 100;
+  }  
+
+a{
     color: #fff !important;
     text-decoration: none !important;
     font-weight: 600;
   }
  
+
   a.nav-link  {
     font-size: 18px;
     color: #e1e1e1;
@@ -333,20 +341,21 @@ div.home-container>.home-content>#intro> div.col> p>span{
 
  .footer{
     cursor: default;
-    padding: 1.5%;
-    background: radial-gradient(circle,#ffffff5b, #00000044 );
+    padding-top: 1.5%;
+    background-color: black;
  }
 
- .footer> div.row:nth-child(1){
-  padding-left: 10%;
-}
-
+ 
   h6{
   text-decoration: underline;
  }
 
-.footer>div.bottom>div.col>p>span#name-footer{
-    background: linear-gradient(90deg, blue, purple);
+.copyrights{
+  padding-top: 10%;
+}
+
+p.copyrights>span#name-footer{
+    background: linear-gradient(90deg, blue, purple);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: oblique;
@@ -355,8 +364,14 @@ div.home-container>.home-content>#intro> div.col> p>span{
  #contacts{
   text-align: center;
   margin-left: -10%;
+  color: white;
  }
 
+.bottom{
+  color: white;
+  font-size: small;
+  text-align: center;
+}
 
  .footer > div.row > div.col-12 > #contacts > ul{
     list-style: none !important;
@@ -366,7 +381,7 @@ div.home-container>.home-content>#intro> div.col> p>span{
 
 
  .footer > div.row > div.col-12 > #contacts > ul > li > a{
-    color: #184875 !important;
+    color: purple !important;
     text-decoration: underline !important;
     font-weight: 700;
  }
@@ -375,6 +390,10 @@ div.home-container>.home-content>#intro> div.col> p>span{
  div.footer> div.row > div.col >p{
   text-align: center;
   font-size: small;
+}
+
+.socials>h6{
+  color: white;
 }
 
 .socials{
