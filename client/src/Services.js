@@ -12,6 +12,13 @@ import reactjsicon from './assets/reactjsicon.png';
 import mongodbicon from './assets/mongodbicon.png';
 import giticon from './assets/giticon.png';
 import jsonicon from './assets/jsonicon.png';
+import frontendservice from './assets/frontendservice.png';
+import backendservice from './assets/backendservice.png';
+import databaseservice from './assets/databaseservice.png';
+import apiservice from './assets/apiservice.png';
+import versioncontrolservice from './assets/versioncontrolservice.png';
+import maintenanceservice from './assets/maintenanceservice.png';
+
 
 const Services = () => {
     
@@ -59,7 +66,7 @@ const Services = () => {
         <hr/>
         <Container className='info-container' fluid>
             <Row>
-                <Col className='self-info' xs={12} md={8} xl={7}>
+                <Col className='self-info' xs={12} md={6} xl={8}>
                     <h4>Educational journey</h4>
                     <div className='about-me'>My educational journey has been one of self-motivation and
                      continuous learning. Upon completing high school, I embarked on a path of self-teaching, 
@@ -72,7 +79,7 @@ const Services = () => {
                          experience with academic rigor—has equipped me with a holistic understanding of 
                     the field and a passion for innovation in the ever-evolving landscape of technology.</div>
                 </Col>
-                <Col xs={12} md={4} xl={5}>
+                <Col xs={12} md={6} xl={4}>
                    <div className='skills-container'>
                         <h4>My Skills</h4>
                         <ul>
@@ -198,6 +205,84 @@ const Services = () => {
                             </li>
                         </ul>
                    </div>
+                </Col>
+            </Row>
+        </Container>
+        <hr/>
+        <Container className='services' fluid>
+            <Row fluid className='services-title'><h2>My Services</h2></Row>
+            <Row fluid className='first-services-row'>
+                <Col className='service' xs={12} md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>Front-End</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={frontendservice}/>
+                    </div>
+                    <p className='service-description'>crafting responsive interfaces for websites, adeptly 
+                    blending HTML, CSS, and JavaScript to design layouts that adapt seamlessly across 
+                    various screen sizes and devices. Leveraging frameworks like Bootstrap
+                    </p>
+                </Col>
+                <Col className='service' xs={12}md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>Back-End</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={backendservice}/>
+                    </div>
+                    <p className='service-description'>Backend services involve architecting the unseen 
+                    foundation of websites, employing languages like JavaScript (Node.js),
+                     to manage server-side logic, data storage, 
+                    and communication with the frontend. </p>
+                </Col>
+            </Row>
+            <Row fluid className='second-services-row'>
+                <Col className='service' xs={12} md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>Database</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={databaseservice}/>
+                    </div>
+                    <p className='service-description'>Leveraging expertise in database systems such as 
+                     PostgreSQL, or MongoDB. I design efficient schemas, 
+                    execute precise queries, and implement rigorous security measures. 
+                    </p>
+                </Col>
+                <Col className='service' xs={12}md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>APIs</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={apiservice}/>
+                    </div>
+                    <p className='service-description'>API services encompass 
+                    designing, developing, and  utilizing RESTful architecture. I construct robust
+                     APIs that enable efficient data exchange between frontend and backend components.</p>
+                </Col>
+            </Row>
+            <Row fluid className='third-services-row'>
+                <Col className='service' xs={12} md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>Version-control</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={versioncontrolservice}/>
+                    </div>
+                    <p className='service-description'>
+                    Version control services involve implementing robust systems such as 
+                    Git to track changes to codebases, enabling collaborative development and seamless project
+                     management. Through meticulous branching, 
+                    merging.
+                    </p>
+                </Col>
+                <Col className='service' xs={12}md={6} xl={6}>
+                    <div>
+                        <label className='service-label'>Maintenance</label>
+                        <br/>   
+                        <img className='service-pic' alt='' src={maintenanceservice}/>
+                    </div>
+                    <p className='service-description'>
+                        Maintenance includes ensuring the continued functionality, security,
+                         and performance of websites and web applications. It involves regular monitoring, 
+                     updates, and bug fixes to address post-launch issues.
+                    </p>
                 </Col>
             </Row>
         </Container>
