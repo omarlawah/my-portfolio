@@ -14,7 +14,7 @@ const Home = () => {
             const intervalId = setInterval(() => {
                 setPhrase(phrases[0].slice(0, letterIndex));
                 letterIndex++;
-            }, 200); 
+            }, 100); 
            
             return () => clearInterval(intervalId);
 
@@ -35,7 +35,7 @@ const Home = () => {
                            </p>
                     </Col>
                     <Row>
-                        <Col>
+                        <Col className='learn-more-col'>
                             <button  className="learn-more">
                                 <Link  to='/Projects'>
                                 <span className="circle" aria-hidden="true">

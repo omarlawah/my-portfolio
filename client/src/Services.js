@@ -218,7 +218,7 @@ const Services = () => {
                         <br/>   
                         <img className='service-pic' alt='' src={frontendservice}/>
                     </div>
-                    <p className='service-description'>crafting responsive interfaces for websites, adeptly 
+                    <p className='service-description'>Crafting responsive interfaces for websites, adeptly 
                     blending HTML, CSS, and JavaScript to design layouts that adapt seamlessly across 
                     various screen sizes and devices. Leveraging frameworks like Bootstrap
                     </p>
@@ -229,7 +229,7 @@ const Services = () => {
                         <br/>   
                         <img className='service-pic' alt='' src={backendservice}/>
                     </div>
-                    <p className='service-description'>Backend services involve architecting the unseen 
+                    <p className='service-description'>Architecting the unseen 
                     foundation of websites, employing languages like JavaScript (Node.js),
                      to manage server-side logic, data storage, 
                     and communication with the frontend. </p>
@@ -253,8 +253,8 @@ const Services = () => {
                         <br/>   
                         <img className='service-pic' alt='' src={apiservice}/>
                     </div>
-                    <p className='service-description'>API services encompass 
-                    designing, developing, and  utilizing RESTful architecture. I construct robust
+                    <p className='service-description'>
+                    Designing, developing, and  utilizing RESTful architecture. I construct robust
                      APIs that enable efficient data exchange between frontend and backend components.</p>
                 </Col>
             </Row>
@@ -266,7 +266,7 @@ const Services = () => {
                         <img className='service-pic' alt='' src={versioncontrolservice}/>
                     </div>
                     <p className='service-description'>
-                    Version control services involve implementing robust systems such as 
+                    Implementing robust systems such as 
                     Git to track changes to codebases, enabling collaborative development and seamless project
                      management. Through meticulous branching, 
                     merging.
