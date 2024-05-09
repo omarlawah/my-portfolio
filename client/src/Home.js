@@ -1,10 +1,12 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
 
 
 const Home = () => {
+    
+    
+
     // function to make the intro text change every 0.1 second
     const phrases = [" I'm a web developer & a web designer."];
     const [phrase, setPhrase] = useState();
@@ -46,12 +48,15 @@ const Home = () => {
                             </button>
                         </Col>    
                         <Col>
-                            <button className="fancy" >
-                                <span className="top-key"></span>
-                                <span className="text">Hire Me</span>
-                                <span className="bottom-key-1"></span>
-                                <span className="bottom-key-2"></span>
-                            </button>
+                                <button className="fancy">
+                                    <span className="top-key"></span>
+                                    <span className="text">
+                                        <Link to={'./Form'}>Hire Me</Link>
+                                        
+                                        </span>
+                                    <span className="bottom-key-1"></span>
+                                    <span className="bottom-key-2"></span>
+                                </button>
                         </Col>    
                     </Row>
                 </Row>
