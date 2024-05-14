@@ -19,17 +19,23 @@ const Form = () => {
     }
     const handleSubmit = async(e)=>{
         e.preventDefault();
+        setLoading(true);
         try{
-            setLoading(true);
-            await axios.post('http://localhost:8000/Form/submit',formBody).then(()=>{
-                setLoading(false);
+            await axios.post('http://localhost:8000/Form/submit',formBody)
+            .then(()=>{
+                alert("form submitted successfully");
+                
+            })
+            .catch((err)=>{
+                alert("Something went wrong, please try again!");
+                return;
             });
             setFormBody({
                 name:"",
                 email:"",
                 message:""
             })
-            alert("form submitted successfully");
+            setLoading(false);
         }catch(err){
             console.log(err.message);
         }
