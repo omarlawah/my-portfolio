@@ -13,9 +13,10 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route exact path='/'   Component={Home} />
-          <Route path='/Services' Component={Services}/>
-          <Route path='/Projects' Component={Projects}/>
+          <Route index   element={Home} />
+          <Route path='/Services' element={Services}/>
+          <Route path='/Projects' element={Projects}/>
+          
         </Routes>
         <Footer />
       </div>
