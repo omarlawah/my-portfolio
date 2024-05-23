@@ -22,7 +22,7 @@ const Home = () => {
 
     },[]);
 
-   
+ 
 
     return (
         <>
@@ -48,7 +48,7 @@ const Home = () => {
                             </button>
                         </Col>    
                         <Col>
-                                <button className="fancy">
+                                <button  className="fancy">
                                     <span className="top-key"></span>
                                     <span className="text">
                                         <a href={`mailto:Omarxxxxx135@gmail.com`}>Hire Me</a>
