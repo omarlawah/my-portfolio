@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Switch} from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Services from './Services';
@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route index   Component={Home} />
+          <Route exact path='/'   Component={Home} />
           <Route path='/Services' Component={Services}/>
           <Route path='/Projects' Component={Projects}/>
         </Routes>
