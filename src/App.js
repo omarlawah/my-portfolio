@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route index path='/'  Component={Home} />
+          <Route index   Component={Home} />
           <Route path='/Services' Component={Services}/>
           <Route path='/Projects' Component={Projects}/>
         </Routes>
