@@ -6,7 +6,7 @@ import Home from './Home';
 import Services from './Services';
 import Projects from './Projects';
 import Footer from './Footer';
-import  Form  from './Form';
+
 function App() {
   return (
     <Router>
@@ -16,7 +16,6 @@ function App() {
           <Route index path='/'  Component={Home} />
           <Route path='/Services' Component={Services}/>
           <Route path='/Projects' Component={Projects}/>
-          <Route path='/Form' Component={Form}/>
         </Routes>
         <Footer />
       </div>
