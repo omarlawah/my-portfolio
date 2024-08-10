@@ -2,7 +2,7 @@ import {Container, Col, Row} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
-    const email = 'Omarxxxxx135@gmail.com';
+    const email = 'omar.lawah2002@gmail.com';
     
     const phoneNumber = "+233595108434";
     return ( 
